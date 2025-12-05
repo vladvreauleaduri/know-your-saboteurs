@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Know Your Saboteurs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Fredoka', 'sans-serif'],
+            },
+            colors: {
+              sketch: {
+                ink: '#1F2937',    // Darker for better text contrast
+                paper: '#FFFDF5',  // Slightly warmer, cleaner white
+                rust: '#E65D4D',   // Brighter Rust for better dark mode visibility
+                ochre: '#EAB04E',  // Brighter Ochre
+                sage: '#6BB394',   // Brighter Sage
+                slate: '#5B86A8',  // Much lighter Blue to pass contrast on dark backgrounds
+                clay: '#EB7E5D'    // Brighter Terra Cotta
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        transition: background-color 0.5s ease, color 0.5s ease;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #94a3b8;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #64748b;
+      }
+      .dark ::-webkit-scrollbar-thumb {
+        background: #475569;
+      }
+      .dark ::-webkit-scrollbar-thumb:hover {
+        background: #64748b;
+      }
+      
+      /* Utilities */
+      .text-shadow {
+        text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.5.0",
+    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "jspdf": "https://aistudiocdn.com/jspdf@^2.5.1",
+    "html2canvas": "https://aistudiocdn.com/html2canvas@^1.4.1"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/know-your-saboteurs/assets/index-DsjRZHA6.js"></script>
+</head>
+  <body class="bg-sketch-paper text-gray-900 dark:bg-[#121212] dark:text-gray-100 antialiased selection:bg-sketch-ochre selection:text-white">
+    <div id="root"></div>
+</body>
+</html>
